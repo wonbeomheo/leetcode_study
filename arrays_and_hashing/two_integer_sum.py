@@ -7,9 +7,7 @@ def twoIntegerSum(nums: List[int], target: int) -> List[int]:
         diff = target - n
         if diff in hashMap:
             return [hashMap[diff], i]
-        else:
-            hashMap[n] = i
-    return []
+        hashMap[n] = i
 
 
 def main():
